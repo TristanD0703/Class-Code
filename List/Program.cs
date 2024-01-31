@@ -1,7 +1,7 @@
 ﻿using System;
 
-public class List{
-	public int[] list;
+public class List<Type>{
+	public Type[] list;
 	private int size;
 
 	public List(){
@@ -9,24 +9,24 @@ public class List{
 		size = 0;
 	}
 
-	public List(int[] arr){
+	public List(Type[] arr){
 		list = arr;
 		size = arr.Length;
 	}
 
-	public static List operator +(List l, int elem){
+	public static List<Type> operator +(List<Type> l, Type elem){
 		int return_size = 1+l.size;
-		int[] return_list = new int[return_size];
+		Type[] return_list = new Type[return_size];
 
 		for(int i = 0; i < l.size; i++){
 			return_list[i] = l.list[i];
 		}
 		return_list[return_size-1] = elem;
-		return new List(return_list);
+		return new List<Type>(return_list);
 	}
 
-	public static List operator +(List l1, List l2){
-		foreach(int val in l2.list){
+	public static List<Type> operator +(List<Type> l1, List<Type> l2){
+		foreach(Type val in l2.list){
 			l1 += val;
 		}
 		return l1;
@@ -37,7 +37,7 @@ public class List{
     public override string ToString()
     {
 		string return_string = "[";
-		foreach(int val in list){
+		foreach(Type val in list){
 			return_string += $"{val},";
 		}
 
@@ -55,7 +55,7 @@ public class ListTest{
 		int[] arr = {0,1,2,3};
 		int elem = 5;
 
-		List l = new List(arr);
+		List<int> l = new List<int>(arr);
 		Console.WriteLine(l);
 
 		l = l + elem;
@@ -63,6 +63,18 @@ public class ListTest{
 
 		l = l + l;
 		Console.WriteLine(l);
+
+		string[] str_arr = {"1", "Hello"};
+		string str1 = "HI";
+
+		List<string> l2 = new List<string>(str_arr);
+		Console.WriteLine(l2);
+
+		l2 = l2 + str1;
+		Console.WriteLine(l2);
+
+		l2 = l2 + l2;
+		Console.WriteLine(l2);
 
 	}
 }
