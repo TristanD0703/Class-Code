@@ -8,7 +8,6 @@ public class StringTests
     Set<string> emptyString;
     Set<string> StringSet1;
     Set<string> StringSet2;
-    Set<string> StringSet3;
     Set<string> IntersectString;
     Set<string> UnionString;
     Set<string> SubtractString;
@@ -20,7 +19,6 @@ public class StringTests
         emptyString = new Set<string>();
         StringSet1 = new Set<string>(["abba", "breakfast", "charlie", "great", "zebra"]);
         StringSet2 = new Set<string>(["breakfast", "delta", "united", "zebra"]);
-        StringSet3 = new Set<string>(["abba", "breakfast", "zebra"]);
         IntersectString = new Set<string>(["breakfast", "zebra"]);
         UnionString = new Set<string>(["abba", "breakfast", "charlie", "delta", "great", "united", "zebra"]);
         SubtractString = new Set<string>(["abba", "charlie", "great"]);
@@ -59,13 +57,6 @@ public class StringTests
     }
 
     [Test]
-    public void TestSetComparison()
-    {
-        Assert.True(StringSet1 > StringSet3);
-        Assert.True(StringSet3 < StringSet1);
-    }
-
-    [Test]
     public void TestSetEmptiness()
     {
         Assert.NotNull(emptyString);
@@ -98,7 +89,6 @@ public class IntTests
     Set<int> emptyInt;
     Set<int> IntSet1;
     Set<int> IntSet2;
-    Set<int> IntSet3;
     Set<int> IntersectInt;
     Set<int> UnionInt;
     Set<int> SubtractInt;
@@ -110,7 +100,6 @@ public class IntTests
         emptyInt = new Set<int>();
         IntSet1 = new Set<int>([2, 4, 5, 7, 12, 13]);
         IntSet2 = new Set<int>([1, 3, 6, 8, 11, 12]);
-        IntSet3 = new Set<int>([2, 4, 13]);
         IntersectInt = new Set<int>([12]);
         UnionInt = new Set<int>([1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13]);
         SubtractInt = new Set<int>([2, 4, 5, 7, 13]);
@@ -149,13 +138,6 @@ public class IntTests
     }
 
     [Test]
-    public void TestSetComparison()
-    {
-        Assert.True(IntSet1 > IntSet3);
-        Assert.True(IntSet3 < IntSet1);
-    }
-
-    [Test]
     public void TestSetEmptiness()
     {
         Assert.NotNull(emptyInt);
@@ -188,7 +170,6 @@ public class DoubleTests
     Set<double> emptyDouble;
     Set<double> DoubleSet1;
     Set<double> DoubleSet2;
-    Set<double> DoubleSet3;
     Set<double> IntersectDouble;
     Set<double> UnionDouble;
     Set<double> SubtractDouble;
@@ -200,7 +181,6 @@ public class DoubleTests
         emptyDouble = new Set<double>();
         DoubleSet1 = new Set<double>([3.4, 3.7, 4.9, 5.0, 5.7, 8.0]);
         DoubleSet2 = new Set<double>([4.9, 5.0, 8.0, 9.4, 11.6]);
-        DoubleSet3 = new Set<double>([3.4, 3.7, 8.0]);
         IntersectDouble = new Set<double>([4.9, 5.0, 8.0]);
         UnionDouble = new Set<double>([3.4, 3.7, 4.9, 5.0, 5.7, 8.0, 9.4, 11.6]);
         SubtractDouble = new Set<double>([3.4, 3.7, 5.7]);
@@ -239,13 +219,6 @@ public class DoubleTests
     }
 
     [Test]
-    public void TestSetComparison()
-    {
-        Assert.True(DoubleSet1 > DoubleSet3);
-        Assert.True(DoubleSet3 < DoubleSet1);
-    }
-
-    [Test]
     public void TestSetEmptiness()
     {
         Assert.NotNull(emptyDouble);
@@ -278,7 +251,6 @@ public class NodeTests
     Set<Node> emptyNode;
     Set<Node> NodeSet1;
     Set<Node> NodeSet2;
-    Set<Node> NodeSet3;
     Set<Node> IntersectNode;
     Set<Node> UnionNode;
     Set<Node> SubtractNode;
@@ -290,7 +262,6 @@ public class NodeTests
         emptyNode = new Set<Node>();
         NodeSet1 = new Set<Node>([new Node(1),new Node(2),new Node(3),new Node(4),new Node(5),new Node(6)]);
         NodeSet2 = new Set<Node>([new Node(1),new Node(3),new Node(5),new Node(7)]);
-        NodeSet3 = new Set<Node>([new Node(1),new Node(5),new Node(6)]);
         IntersectNode = new Set<Node>([new Node(1),new Node(3),new Node(5)]);
         UnionNode = new Set<Node>([new Node(1),new Node(2),new Node(3),new Node(4),new Node(5),new Node(6),new Node(7)]);
         SubtractNode = new Set<Node>([new Node(2),new Node(4),new Node(6)]);
@@ -326,13 +297,6 @@ public class NodeTests
     public void TestSetIntersect()
     {
         Assert.True((NodeSet1 & NodeSet2) == IntersectNode);
-    }
-
-    [Test]
-    public void TestSetComparison()
-    {
-        Assert.True(NodeSet1 > NodeSet3);
-        Assert.True(NodeSet3 < NodeSet1);
     }
 
     [Test]

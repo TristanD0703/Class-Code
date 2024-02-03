@@ -31,6 +31,14 @@ namespace Node{
 			return node1.Val != node2.Val;
 		}
 
+		public static bool operator >(Node node1, Node node2){
+			return node1.Val > node2.Val;
+		}
+
+		public static bool operator <(Node node1, Node node2){
+			return node1.Val < node2.Val;
+		}
+
 	}
 }
 
