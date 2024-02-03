@@ -1,24 +1,34 @@
-﻿namespace Node{
+﻿using System.Runtime.CompilerServices;
 
-	public class Node<Value>{
-		private Value? val;
-		public Value? Val{
+namespace Node{
+
+	public class Node{
+		private int val;
+		public int Val{
 			get => val;
 		}
 
-		public Node<Value>? next;
-		public Node<Value>? previous;
+		public Node next;
+		public Node previous;
 
 		public Node(){
-			val = default(Value);
+			val = -1;
 			next = null;
 			previous = null;
 		}
 
-		public Node(Value val){
+		public Node(int val){
 			this.val = val;
 			next = null;
 			previous = null;
+		}
+
+		public static bool operator ==(Node node1, Node node2){
+			return node1.Val == node2.Val;
+		}
+
+		public static bool operator !=(Node node1, Node node2){
+			return false;
 		}
 
 	}

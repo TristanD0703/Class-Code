@@ -6,19 +6,11 @@ namespace Set{
 		private Element[] set;
 
 		public Set(){
-
+			set = [];
 		}
 
 		public Set(Element[] set){
-
-		}
-
-		public static bool operator true(Set<Element> set){
-			return true;
-		}
-
-		public static bool operator false(Set<Element> set){
-			return true;
+			this.set = set;
 		}
 	}
 }
