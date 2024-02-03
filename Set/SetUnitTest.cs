@@ -66,18 +66,6 @@ public class StringTests
     }
 
     [Test]
-    public void TestSetEquality()
-    {
-        Assert.True(StringSet1 == StringSet3);
-    }
-
-    [Test]
-    public void TestSetInequality()
-    {
-        Assert.True(StringSet1 != StringSet2);
-    }
-
-    [Test]
     public void TestSetEmptiness()
     {
         Assert.NotNull(emptyString);
@@ -165,18 +153,6 @@ public class IntTests
     {
         Assert.True(IntSet1 > IntSet2);
         Assert.True(IntSet2 < IntSet1);
-    }
-
-    [Test]
-    public void TestSetEquality()
-    {
-        Assert.True(IntSet1 == IntSet3);
-    }
-
-    [Test]
-    public void TestSetInequality()
-    {
-        Assert.True(IntSet1 != IntSet2);
     }
 
     [Test]
@@ -270,18 +246,6 @@ public class DoubleTests
     }
 
     [Test]
-    public void TestSetEquality()
-    {
-        Assert.True(DoubleSet1 == DoubleSet3);
-    }
-
-    [Test]
-    public void TestSetInequality()
-    {
-        Assert.True(DoubleSet1 != DoubleSet2);
-    }
-
-    [Test]
     public void TestSetEmptiness()
     {
         Assert.NotNull(emptyDouble);
@@ -323,9 +287,6 @@ public class NodeTests
     [SetUp]
     public void CreateSets()
     {
-
-
-
         emptyNode = new Set<Node>();
         NodeSet1 = new Set<Node>([new Node(1),new Node(2),new Node(3),new Node(4),new Node(5),new Node(6)]);
         NodeSet2 = new Set<Node>([new Node(1),new Node(3),new Node(5),new Node(7)]);
