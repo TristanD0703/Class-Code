@@ -2,15 +2,16 @@
 using Node;
 
 namespace Set{
-	public class Set<Element>{
-		private Element[] set;
+	public class Set<IComparable>{
+		private List<IComparable> set;
 
 		public Set(){
-			set = [];
+			set = new List<IComparable>();
 		}
 
-		public Set(Element[] set){
+		public Set(List<IComparable> set){
 			this.set = set;
 		}
+
 	}
 }
