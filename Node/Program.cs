@@ -2,7 +2,7 @@
 
 namespace Node{
 
-	public class Node{
+	public class Node : IComparable{
 		private int val;
 		public int Val{
 			get => val;
@@ -31,15 +31,18 @@ namespace Node{
 			return node1.Val != node2.Val;
 		}
 
-		public static bool operator >(Node node1, Node node2){
-			return node1.Val > node2.Val;
-		}
-
-		public static bool operator <(Node node1, Node node2){
-			return node1.Val < node2.Val;
-		}
-
-	}
+        public int CompareTo(Object obj)
+        {
+			Node n = (Node)obj;
+            if (n.Val == this.Val){
+				return 0;
+			}
+			else if(n.Val <= this.Val){
+				return 1;
+			}
+			return -1;
+        }
+    }
 }
 
 public class NodeTester{
