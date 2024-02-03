@@ -1,4 +1,4 @@
-*/*.tmp
-*/*.dll
-*/*.pdb
-*/*.cache
+*.tmp
+*.dll
+*.pdb
+*.cache
