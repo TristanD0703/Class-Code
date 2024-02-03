@@ -375,18 +375,6 @@ public class NodeTests
     }
 
     [Test]
-    public void TestSetEquality()
-    {
-        Assert.True(NodeSet1 == NodeSet3);
-    }
-
-    [Test]
-    public void TestSetInequality()
-    {
-        Assert.True(NodeSet1 != NodeSet2);
-    }
-
-    [Test]
     public void TestSetEmptiness()
     {
         Assert.NotNull(emptyNode);

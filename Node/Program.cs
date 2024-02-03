@@ -28,7 +28,7 @@ namespace Node{
 		}
 
 		public static bool operator !=(Node node1, Node node2){
-			return false;
+			return node1.Val != node2.Val;
 		}
 
 	}
