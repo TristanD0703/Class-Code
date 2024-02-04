@@ -3,7 +3,8 @@ using Node;
 
 namespace Set{
 	public class Set<IComparable>{
-		private List<IComparable> set;
+		public List<IComparable> set;
+
 
 		public Set(){
 			set = new List<IComparable>();

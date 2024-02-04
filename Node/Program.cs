@@ -31,6 +31,11 @@ namespace Node{
 			return node1.Val != node2.Val;
 		}
 
+		public override bool Equals(Object obj){
+			Node n = (Node)obj;
+			return n.Val == this.Val;
+		}
+
         public int CompareTo(Object obj)
         {
 			Node n = (Node)obj;
