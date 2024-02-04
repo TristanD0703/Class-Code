@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lucius/ProgrammingAssignments/Class-Code/Node/Node.csproj": {}
+    "C:\\Users\\trist\\Documents\\GitHub\\Class-Code(1)\\Node\\Node.csproj": {}
   },
   "projects": {
-    "/Users/lucius/ProgrammingAssignments/Class-Code/Node/Node.csproj": {
+    "C:\\Users\\trist\\Documents\\GitHub\\Class-Code(1)\\Node\\Node.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lucius/ProgrammingAssignments/Class-Code/Node/Node.csproj",
+        "projectUniqueName": "C:\\Users\\trist\\Documents\\GitHub\\Class-Code(1)\\Node\\Node.csproj",
         "projectName": "Node",
-        "projectPath": "/Users/lucius/ProgrammingAssignments/Class-Code/Node/Node.csproj",
-        "packagesPath": "/Users/lucius/.nuget/packages/",
-        "outputPath": "/Users/lucius/ProgrammingAssignments/Class-Code/Node/obj/",
+        "projectPath": "C:\\Users\\trist\\Documents\\GitHub\\Class-Code(1)\\Node\\Node.csproj",
+        "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trist\\Documents\\GitHub\\Class-Code(1)\\Node\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/lucius/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

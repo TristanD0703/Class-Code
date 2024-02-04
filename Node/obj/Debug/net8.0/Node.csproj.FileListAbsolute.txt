@@ -1,0 +1,15 @@
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\bin\Debug\net8.0\Node.exe
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\bin\Debug\net8.0\Node.deps.json
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\bin\Debug\net8.0\Node.runtimeconfig.json
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\bin\Debug\net8.0\Node.dll
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\bin\Debug\net8.0\Node.pdb
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.AssemblyInfoInputs.cache
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.AssemblyInfo.cs
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.csproj.CoreCompileInputs.cache
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.sourcelink.json
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.dll
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\refint\Node.dll
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.pdb
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\Node.genruntimeconfig.cache
+C:\Users\trist\Documents\GitHub\Class-Code(1)\Node\obj\Debug\net8.0\ref\Node.dll
